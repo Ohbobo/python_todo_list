@@ -1,0 +1,8 @@
+<h2
+hx-get="{% url 'get-tasks' collection.pk %}"
+hx-trigger="click"
+hx-target="#tasks"
+hx-push-url="?collection={{ collection.slug }}"
+>
+{{ collection.name }}
+</h2>
